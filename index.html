@@ -1,24 +1,227 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 1: ¡El Comienzo de tu Viaje como Inventor!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1: ¡El Comienzo de tu Viaje como Inventor!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li><strong>Objetivo Inspiracional:</strong> Que los estudiantes se sientan emocionados y empoderados por unirse a Gnius Club, entendiéndolo como un espacio para inventar y crear con tecnología.</li>
+                                        <li><strong>Objetivo Conceptual:</strong> Que los estudiantes comprendan qué es un Micro:bit, viéndolo como un "pequeño cerebro" que puede dar vida a objetos y proyectos.</li>
+                                        <li><strong>Objetivo Práctico:</strong> Que los estudiantes conozcan y accedan por primera vez a la plataforma MakeCode, su "taller digital" para el año, y aprendan a crear y guardar un proyecto en blanco.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡¡Bienvenidos al Laboratorio de Inventores!:</strong> Introducción, storytelling y presentación del Micro:bit.</li>
+                                        <li><strong class="tactic-highlight">⚡El Mapa de tu Aventura Tecnológica:</strong> Presentación del ecosistema de aprendizaje (Micro:bit, MakeCode, IA).</li>
+                                        <li><strong class="tactic-highlight">⚡Creando tu Pasaporte de Inventor:</strong> Acceso práctico a MakeCode y primer guardado de proyecto.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un nuevo proyecto en MakeCode, nombrado 'Mi Pasaporte', guardado exitosamente como un archivo .hex en el dispositivo del estudiante.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Computadoras o tabletas para cada estudiante o pareja.</li>
+                                        <li>Un Micro:bit físico para la demostración del facilitador.</li>
+                                        <li><strong>Video Inspirador:</strong> Un video corto (1-2 minutos) que muestre a niños creando proyectos divertidos con Micro:bit.</li>
+                                        <li>Enlace directo a <code>makecode.microbit.org</code> listo para compartir.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li>Verificar que todos los dispositivos de los estudiantes tengan acceso a internet y a un navegador.</li>
+                                        <li>Tener el video inspirador precargado para evitar demoras.</li>
+                                        <li>Tener la página de MakeCode abierta y un proyecto de ejemplo muy simple (un corazón que parpadea) cargado en el Micro:bit físico para mostrarlo.</li>
+                                        <li>Familiarizarse con el proceso de guardar archivos (`.hex`) desde MakeCode en los dispositivos que usarán los estudiantes.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: ¡Bienvenidos al Laboratorio de Inventores! ⏰ 10 minutos</h2>
+                <p>Introduce la visión de Gnius Club a través de storytelling y un video inspirador, y presenta la herramienta clave: el Micro:bit.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Storytelling ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva de Bienvenida de Gnius Club).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, futuros inventores, y bienvenidos a Gnius Club! Levanten la mano si alguna vez han jugado un videojuego. ¡Casi todos! Ahora, levanten la mano si alguna vez han *creado* un videojuego... ¿O si han construido un robot que sigue sus órdenes? ¿O han inventado un dispositivo que les ayuda en algo? Bueno, prepárense, porque este lugar no es una clase normal. ¡Este es su laboratorio de inventores! Aquí, vamos a pasar de ser solo jugadores a ser los creadores. Vamos a dejar de solo usar la tecnología y vamos a empezar a darle vida a nuestras propias ideas. Juntos, vamos a descubrir que con un poco de creatividad y las herramientas correctas, ustedes pueden construir cosas asombrosas. ¿Están listos para empezar su viaje como inventores?</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Inspiración en Acción y Presentación del "Cerebro" ⏰ 5 minutos</h3>
+                            <p>(Proyectar el video inspirador de Micro:bit).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean de lo que estoy hablando, quiero que vean a otros niños, como ustedes, que ya comenzaron este viaje. Miren con atención lo que están creando.</p>
+                                <p class="dialogue assistant">(Después del video, tomar el Micro:bit físico y mostrarlo a la clase).</p>
+                                <p class="dialogue assistant">¿Vieron todas esas cosas increíbles? Guitarras de cartón que suenan de verdad, robots que riegan plantas, juegos... Todos esos inventos tienen algo en común. Usan un pequeño cerebro mágico como este. <strong>(Mostrar el Micro:bit de cerca)</strong>. Esto se llama Micro:bit. No parece mucho, ¿verdad? ¡Pero es superpoderoso! Es una pequeña computadora que podemos programar para que haga casi cualquier cosa que imaginemos. Tiene luces, botones y sensores que pueden sentir el movimiento y la luz. Este pequeño cerebro será nuestro mejor amigo inventor este año. Con él, le daremos vida a nuestros proyectos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: El Mapa de tu Aventura Tecnológica ⏰ 10 minutos</h2>
+                <p>Presenta visualmente las herramientas que usarán durante el año para que los estudiantes se familiaricen con su ecosistema de aprendizaje.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando el "Kit de Inventor" ⏰ 10 minutos</h3>
+                            <p>(Proyectar una diapositiva con tres grandes iconos: el logo de Micro:bit, el logo de MakeCode y un ícono que represente IA como un cerebro con engranajes o un ajolote (para Xolo)).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Todo gran inventor tiene su propio kit de herramientas. Este año, el nuestro tendrá tres partes principales. ¡Este es nuestro Mapa de Aventura!</p>
+                                <p class="dialogue assistant"><strong>(Señalar el ícono del Micro:bit)</strong></p>
+                                <p class="dialogue assistant">Primero, ya lo conocen, tenemos nuestro <strong>Micro:bit</strong>, que es el <strong>Cerebro de Nuestros Inventos</strong>. Es la parte física, la que conectaremos a las cosas para que se muevan, brillen y hagan sonidos. Es el corazón de nuestras creaciones.</p>
+                                <p class="dialogue assistant"><strong>(Señalar el ícono de MakeCode)</strong></p>
+                                <p class="dialogue assistant">Luego, necesitamos un lugar para darle las instrucciones a nuestro cerebro. ¡No podemos hablarle directamente! Para eso usaremos <strong>MakeCode</strong>. Imaginen que MakeCode es nuestro <strong>Taller Digital</strong>. Es una página web donde usaremos bloques de colores, como si fueran piezas de LEGO, para decirle al Micro:bit exactamente lo que queremos que haga. Es donde diseñaremos los planos de nuestros inventos.</p>
+                                <p class="dialogue assistant"><strong>(Señalar el ícono de IA/Xolo)</strong></p>
+                                <p class="dialogue assistant">Y finalmente, tenemos un ayudante superinteligente. Más adelante conocerán a Xolo, nuestro copiloto de Inteligencia Artificial. Piensen en él como su <strong>Asistente Genio</strong>. Cuando tengamos una idea increíble pero no sepamos bien cómo empezar a construirla en nuestro taller, le preguntaremos a Xolo. Él nos ayudará a traducir nuestra 'idea' o 'vibe' a un plan de bloques que podremos usar en MakeCode. Será nuestro guía para que nunca nos sintamos atorados.</p>
+                                <p class="dialogue assistant">Así que recuerden: <strong>Cerebro (Micro:bit)</strong>, <strong>Taller (MakeCode)</strong> y <strong>Asistente Genio (IA)</strong>. ¡Con estas tres herramientas, no hay nada que no podamos crear!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Creando tu Pasaporte de Inventor ⏰ 20 minutos</h2>
+                <p>Guía a los estudiantes en el proceso práctico y crucial de acceder a MakeCode y aprender a guardar su trabajo, enmarcado como la creación de su identidad de inventor.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Entrando a Nuestro Taller Digital ⏰ 5 minutos</h3>
+                            <p>(Proyectar la página de inicio de makecode.microbit.org).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, inventores, es hora de abrir las puertas de nuestro taller digital por primera vez. Para empezar a crear, necesitamos nuestro espacio de trabajo. Vamos todos a sus computadoras o tabletas. Les voy a guiar paso a paso para que nadie se quede atrás. Esto es como recibir las llaves de su propio laboratorio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Configuración Guiada del Espacio de Trabajo ⏰ 10 minutos</h3>
+                            <p>Guiar a los estudiantes paso a paso para acceder a MakeCode, crear y nombrar un nuevo proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Primero, abran el navegador de internet... ¿Listos? Excelente.</p>
+                                 <p class="dialogue assistant">Ahora, en la barra de direcciones de arriba, vamos a escribir la dirección secreta de nuestro taller. Es: <strong>makecode.microbit.org</strong>. Lo escribiré grande en la pantalla para que puedan copiarlo. Tómense su tiempo...</p>
+                                 <p class="dialogue assistant"><strong>(Verificar que todos hayan llegado a la página correcta).</strong></p>
+                                 <p class="dialogue assistant">¡Perfecto! Ya están en la entrada de MakeCode. Ven ese botón grande que dice <strong>'+ Nuevo Proyecto'</strong>? Ese es nuestro botón para empezar a inventar. Vamos a hacerle clic todos juntos. ¡Uno, dos, tres, clic!</p>
+                                 <p class="dialogue assistant">Les pedirá un nombre para su primer invento. Vamos a llamarlo <strong>'Mi Pasaporte'</strong>. Escriban eso y luego denle al botón verde que dice 'Crear'.</p>
+                                 <p class="dialogue assistant"><strong>(Dar tiempo para que todos lleguen a la interfaz de bloques).</strong></p>
+                                 <p class="dialogue assistant">¡Felicidades, están dentro de su taller! Miren a su alrededor. A la izquierda, ven un Micro:bit virtual que nos mostrará lo que nuestro código hará. En el centro, los bloques de colores, que son nuestras herramientas. Y a la derecha, el espacio donde construiremos nuestros programas. Por ahora no haremos nada, solo quiero que exploren con la vista.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: El Secreto del Inventor: Cómo Guardar tus Ideas ⏰ 5 minutos</h3>
+                            <p>Enseñar el proceso de guardar un proyecto como un archivo .hex, estableciendo una rutina clave para el resto del año.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, les enseñaré uno de los secretos más importantes de un inventor: ¡cómo guardar sus ideas para que no se pierdan! En MakeCode, nuestros proyectos se guardan en un archivo especial.</p>
+                                <p class="dialogue assistant">Miren abajo, al lado del botón morado de 'Descargar'. Hay un icono de un disquete, un cuadrito para guardar. Hagan clic ahí. Verán que se descarga un archivo con un nombre extraño que termina en <strong>'.hex'</strong>. Ese archivo es como un cofre del tesoro que guarda todas las instrucciones de su proyecto.</p>
+                                <p class="dialogue assistant">Cada vez que terminemos un proyecto importante, guardaremos nuestro archivo `.hex` en una carpeta especial en la computadora. Así, la próxima vez, podremos abrirlo y continuar donde nos quedamos. Hoy solo practicamos, pero es muy importante que recuerden este paso para no perder nunca sus increíbles inventos. ¡Han creado oficialmente su Pasaporte de Inventor! ¡Buen trabajo, equipo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
